@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
+<body ng-app="myApp">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -37,5 +37,12 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-file-upload-shim.js"></script>
+    <script src="~/Scripts/angular-file-upload.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/controllers/fileUploadController.js"></script>
 </body>
 </html>
